@@ -1,0 +1,463 @@
+body {
+  margin: 0px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  color: #333;
+  background-color: #fff;
+}
+
+p {
+  font-family: 'Libre Baskerville', sans-serif;
+}
+
+/* -------------
+      LOADER
+---------------- */
+
+/* have loading icon cover up everything */
+.loader {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 1000;
+}
+
+.loader .inner {
+  width: 100%;
+  height: 100%;
+  background: url(../img/loader.gif) center center no-repeat; /* center the image and don't tile it up */
+}
+
+/* -------------
+   TITLE SCREEN
+---------------- */
+
+.titleMessage {
+  position: absolute;
+  width: 100%;
+  height: 250px;
+  top: 50%;
+  z-index: 5;
+  text-align: center;
+  margin-top: -125px;
+}
+
+.titleMessage .heading p {
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  text-shadow: 0px 2px 5px rgba(0,0,0,0.4);
+  font-weight: 400;
+}
+
+.titleMessage .heading .main {
+  font-size: 45px;
+  text-transform: uppercase;
+}
+
+.titleMessage .heading .sub {
+  font-size: 23px;
+}
+
+/* adding black opacity to superslides background */
+.overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 3; /* z-index of superslides is 2 */
+  background-color: rgba(0, 0, 0, 0.4); /* black with 0.4 opacity */
+}
+
+/* -------------
+      NAVBAR
+---------------- */
+
+#navigation {
+  background-color: #c0392b;
+  padding: 20px 10px;
+  z-index: 100;
+  width: 100%;
+}
+
+#navigation li {
+  padding: 0 10px;
+}
+
+#navigation li a {
+  color: #fff;
+}
+
+.navbar-brand,
+.navbar-brand:hover {
+  color: #fff;
+  font-family: 'Lobster', cursive;
+  font-size: 2em;
+  letter-spacing: 0.07em;
+  padding: 0 0 0 0;
+  margin: 0 16px 0 0;
+}
+
+/* the burger icon */
+.navbar-toggler-icon {
+  background: url(../img/icons/menu.png);
+  background-size: 100%;
+}
+
+.fixedNav #navigation {
+  position: fixed;
+  top: 0;
+}
+
+.section {
+  padding: 50px 0;
+}
+
+#about, #portfolio {
+  background-color: #f5f5f5;
+}
+
+/* -------------
+      ABOUT
+---------------- */
+
+.aboutImage {
+  max-width: 100%;
+  border-radius: 50%;
+}
+
+.about-container {
+  display: flex;
+  justify-content: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 90px;
+}
+
+.about-container__image-container {
+  margin-right: 30px;
+  flex: 0 0 235px;
+}
+
+@media only screen and (max-width: 800px) {
+  .about-container {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+
+  .about-container__image-container {
+    align-self: center;
+    margin-right: 0;
+    margin-bottom: 30px;
+    width: 250px;
+  }
+
+  .about-container__info-container {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}
+
+.about-container__email-link {
+  display: inline-block;
+  background: #e74c3c;
+  color: white;
+  text-decoration: none;
+  padding: 8px 10px;
+  font-size: 15px;
+  cursor: pointer;
+  letter-spacing: 1.5px;
+  transition: all .5s;
+}
+
+.about-container__email-link:hover {
+  text-decoration: none;
+  color: white;
+  background-color: #96392b;
+}
+
+.external__link {
+  color: #e74c3c;
+  text-decoration: none;
+}
+
+.external__link:hover {
+  cursor: pointer;
+  text-decoration: none;
+  color: #e74c3c;
+}
+
+#about h5 {
+  font-size: 16px;
+  color: #e74c3c;
+}
+
+#about h4 {
+  font-family: 'Libre Baskerville', sans-serif;
+}
+
+#about .col-md-4 {
+  padding-bottom: 20px;
+}
+
+#resume-email {
+  display: flex;
+  padding: 0;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+#resume-email a {
+  color: #fff;
+}
+
+#resume-email li {
+  margin: 3px 5px 3px 0px;
+  font-size: 15px;
+  cursor: pointer;
+  letter-spacing: 1.5px;
+}
+
+#resume-email li:hover {
+  background-color: #96392b;
+  border: 1px solid transparent;
+}
+
+#email-button {
+  background-color: #e74c3c;
+  border: 1px solid transparent;
+  padding: 8px;
+}
+
+#resume-button {
+  background-color: #e74c3c;
+  border: 1px solid transparent;
+  padding: 8px 14.7px;
+}
+
+/* -------------
+      SKILLS
+---------------- */
+
+.skillsSection,
+.contactSection {
+  /* background-color: #e74c3c; */
+  background-image: linear-gradient(to right bottom, rgba(222,53,46,0.8), rgba(176,37,33,0.8)),url(../img/red_background.jpg);
+  background-size: cover;
+  color: #fff;
+}
+
+.section .heading {
+  text-align: center;
+  padding-bottom: 40px;
+  width: 100%;
+}
+
+/* languages/frontend/backend */
+.stack {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+.stack-title {
+  font-size: 20px;
+  padding: 10px;
+}
+
+.skills-icon {
+  color: #e74c3c;
+}
+
+.skills-icon-background {
+  color: white;
+}
+
+.highlight {
+  font-weight: bold;
+  font-style: italic;
+  color: #fff000;
+}
+
+a.highlight {
+  text-decoration: underline;
+}
+
+/* -------------
+    PORTFOLIO
+---------------- */
+
+#portfolio h2 {
+  color: #e74c3c;
+}
+/* putting subtle red line above the portfolio title */
+/* https://www.steckinsights.com/shorten-length-border-bottom-pure-css/ */
+#portfolio h2:before {
+  content: ""; /* This is necessary for the pseudo element to work. */
+  display: block; /* This will put the pseudo element on its own line. */
+  margin: 0 auto; /* This will center the border. */
+  width: 14%; /* Change this to whatever width you want. */
+  padding-bottom: 15px; /* This creates some space between the element and the border. */
+  border-top: 1px red solid;
+}
+
+#portfolio .addl-info {
+  display: flex;
+  justify-content: center;
+  color: gray;
+}
+
+#portfolio h6 {
+  width: 77%;
+}
+
+/* thumbnail border */
+.owl-carousel .owl-item img {
+  width: 99%; /* 1% room for shadow touch */
+}
+
+.item img {
+  box-shadow: 2px 2px 4px gray;
+}
+
+/* github and heroku link styling */
+.proj-line {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.proj-line h4 {
+  margin-bottom: 0px;
+}
+
+.proj-links {
+  padding-left: 2px;
+  font-size: 1.75em;
+}
+
+.proj-line a {
+  color:inherit;
+  text-decoration: none;
+  margin-right: 5px;
+}
+
+.proj-line i:hover {
+  color: #e74c3c;
+  cursor: pointer;
+}
+
+.tech-list {
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+.tech-list li {
+  padding: 4px;
+  background-color: #e74c3c;
+  border: 1px solid transparent;
+  margin: 2px;
+  color: white;
+  font-size: 12px;
+}
+
+/* --------------
+    CONTACTS
+----------------- */
+
+.subHeading {
+  font-size: 16px;
+}
+
+#contact {
+  padding: 150px 0px;
+  background-image: linear-gradient(to right bottom, rgba(222,53,46,0.8), rgba(176,37,33,0.8)),url(../img/red_background.jpg);
+  background-size: cover;
+}
+
+#contact h2 {
+  margin-bottom: 25px;
+  margin-top: 15px;
+}
+
+#contact p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+#contact .emailSub {
+  margin-top: 50px;
+  font-size: 13px;
+}
+
+#contact a {
+  color: #ffd700;
+  text-decoration: none;
+}
+
+#contact a:hover {
+  color: #000000;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* ---------------------
+    FOOTER/COPYRIGHT
+---------------------- */
+
+.copyrightSection {
+  background-color: #363b3f;
+  color: #fff;
+  padding: 30px 50px;
+}
+
+.copyrightSection p {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.copyrightSection ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  padding-left: 0px;
+  margin-top: 10px;
+}
+
+.copyrightSection li {
+  margin: 0px 5px;
+  font-size: 30px;
+}
+
+.copyrightSection a {
+  color: #95a5a6;
+  text-decoration: none;
+}
+
+.copyrightSection a:hover {
+  cursor: pointer;
+  text-decoration: none;
+  color: #bdc3c7;
+}
+
+.fa-angellist {
+  background-color: #95a5a6;
+  color: #363b3f;
+  font-size: 20px;
+  padding: 4.83px 5px 2px 5px;
+  border-radius: 2px;
+  position: relative;
+  top: -3px;
+}
+
+.fa-angellist:hover {
+  cursor: pointer;
+  text-decoration: none;
+  background-color: #bdc3c7;
+}
