@@ -1,1 +1,383 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-146419497-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-146419497-1');
+    </script>
+    <meta charset="utf-8">
+    <title>Kevin Y. Kim - Software Engineer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" property="og:title" content="Kevin Y. Kim Portfolio">
+    <meta name="image" property="og:image" content="img/nyc_sunrise.jpg">
+    <meta name="description" property="og:description" content="I am a software engineer currently working as a front end engineer at Single Stop. As a programmer, I find myself completely absorbed in the work whether it be creating apps from scratch (like a Minecraft session) or diving into a codebase (like a Myst session).">
+    <meta name="author" content="Kevin Y. Kim">
+    <meta property="og:type" content="website">
+    <link rel="shortcut icon" href="favicon/favicon.ico">
+    <link rel="stylesheet" href="css/superslides.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans%7CLibre+Baskerville%7CMontserrat%7CLobster" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <div class="loader">
+      <div class="inner"></div>
+    </div>
+
+    <div id="slides">
+
+      <div class="overlay"></div>
+
+      <div class="slides-container">
+        <img src="img/nyc_sunrise.jpg" alt="nyc sunrise">
+      </div>
+
+      <div class="titleMessage">
+        <div class="heading">
+          <p class="main">Kevin Y. Kim</p>
+          <p class="sub typed"></p>
+        </div>
+      </div>
+
+    </div> <!--slides -->
+
+    <nav id="navigation" class="navbar navbar-expand-lg">
+      <a class="navbar-brand" href="#">Kevin Y. Kim </a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">SKILLS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio">WORK EXPERIENCE</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div id="about" class="section">
+      <div class="about-container">
+
+          <div class="about-container__image-container">
+            <img class="aboutImage" src="https://i.imgur.com/4JJmmgo.png" alt="kevinykim">
+          </div>
+
+          <div class="about-container__info-container">
+            <h5>ABOUT</h5>
+            <h4>Who am I?</h4>
+
+            <p>
+              I am a software engineer currently working as a front end engineer at <a href="https://staging.singlestop.org" class="external__link">Single Stop</a>.
+            </p>
+
+            <p>As a programmer, I find myself completely
+              absorbed in the work whether it be creating apps from scratch
+               (like a <a class="external__link" href="https://minecraft.net/en-us/" target="_blank">Minecraft</a> session) or diving into a codebase
+               (like a <a class="external__link" href="https://en.wikipedia.org/wiki/Myst" target="_blank">Myst</a> session).
+            </p>
+
+            <a href="mailTo:kevinyckim33@gmail.com" class="about-container__email-link">EMAIL ME</a>
+          </div>
+        </div> <!--about-container -->
+      </div>
+    </div> <!-- about -->
+
+    <div id="skills" class="skillsSection section">
+      <div class="container">
+        <div class="row" style="padding-bottom: 20px;">
+          <div class="col-md-12 text-center">
+            <h2>TECHNICAL SKILLS</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm text-center">
+            <div class="stack">
+              <div>
+                <span class="fa-stack fa-2x">
+                  <i class="fa fa-circle fa-stack-2x skills-icon-background"></i>
+                  <!-- <i class="fa fa-code fa-stack-1x skills-icon"></i> -->
+                  <i class="fab fa-js-square fa-stack-1x skills-icon"></i>
+                </span>
+              </div>
+              <div class="stack-title">JAVASCRIPT</div>
+              <div>
+                I have coded extensively in <span class="highlight">JavaScript</span>, <span class="highlight">React</span>, <span class="highlight">Redux</span>, <span class="highlight">Apollo</span>, and <span class="highlight">jQuery</span>. I like writing meaningful tests with <span class="highlight">Jest</span>, <span class="highlight">React Testing Library</span>, and <span class="highlight">Cypress</span>. I have read all six volumes of <a href="https://github.com/getify/You-Dont-Know-JS" target="_blank" class="highlight">Kyle Simpson's YDKJS series</a> and now eagerly wait for someone to ask me what closure is someday.
+              </div>
+            </div>
+          </div>
+          <div class="col-sm text-center">
+            <div class="stack">
+              <div>
+                <span class="fa-stack fa-2x">
+                  <i class="fa fa-circle fa-stack-2x skills-icon-background"></i>
+                  <i class="fab fa-css3-alt fa-stack-1x skills-icon"></i>
+                  <!-- <i class="fab fa-css3-alt"></i> -->
+                </span>
+              </div>
+              <div class="stack-title">CSS</div>
+              <div>
+                I thoroughly enjoy bringing wireframes and prototypes to life using <span class="highlight">CSS3</span>.
+                I put great importance on keeping CSS codebase scaleable by utilizing combinations of <span class="highlight">SASS/SCSS</span>, <span class="highlight">Styled Components</span>, and <span class="highlight">BEM</span>.
+              </div>
+            </div>
+          </div>
+          <div class="col-sm text-center">
+            <div class="stack">
+              <div>
+                <span class="fa-stack fa-2x">
+                  <i class="fa fa-circle fa-stack-2x skills-icon-background"></i>
+                  <i class="fa fa-database fa-stack-1x skills-icon"></i>
+                </span>
+              </div>
+              <div class="stack-title">BACK END</div>
+              <div>
+                I have worked closely with <span class="highlight">Ruby on Rails</span> for the past 3 years. I can confidently build <span class="highlight">GraphQL</span> queries and <span class="highlight">RESTful APIs</span>, query and build relational databases (<span class="highlight">PostgreSQL</span>), and handle deployment in <span class="highlight">AWS</span> and <span class="highlight">Heroku</span> environments.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="portfolio" class="section">
+      <div class="container">
+        <div class="row">
+          <div class="heading">
+            <h2>WORK EXPERIENCE</h2>
+            <div class="addl-info">
+              <h6>Click on a slide to see its detailed descriptions</h6>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-7" style="padding-bottom: 10px">
+            <div class="owl-carousel owl-theme">
+              <div class="item">
+                  <a href="img/single_stop_landing.png" title="Landing Page" data-fancybox="singlestop" data-caption="We are currently busy launching Single Stop v3.0 to our partners built completely from the ground up.">
+                    <img src="img/single_stop_landing.png" class="img-fluid rounded mb-3 mb-md-0" alt="single-stop-landing">
+                  </a>
+              </div>
+              <div class="item">
+                  <a href="img/single_stop_browse_resources.png" title="Browse Resources" data-fancybox="singlestop" data-caption="Users can search their neighborhood to find locations and partners that may assist them in meeting their needs.  Search and geocoding results are stored and sent back from our Algolia index and mapped onto Google Maps.">
+                    <img class="img-fluid rounded mb-3 mb-md-0" src="img/single_stop_browse_resources.png" alt="single-stop-browse-resources">
+                  </a>
+              </div>
+              <div class="item">
+                  <a href="img/single_stop_screener.png" title="Screener" data-fancybox="singlestop" data-caption="Clients can fill out our benefits eligibility screener that will display questions dynamically based on their previous answers. Our questionnaire is built on redux forms and Material UI.">
+                    <img class="img-fluid rounded mb-3 mb-md-0" src="img/single_stop_screener.png" alt="single-stop-screener">
+                  </a>
+              </div>
+              <div class="item">
+                  <a href="img/single_stop_client_records.png" title="Client Records" data-fancybox="singlestop" data-caption="A case manager from our partners can manage and view all of their clients to see their statuses and their screening results.">
+                    <img class="img-fluid rounded mb-3 mb-md-0" src="img/single_stop_client_records.png" alt="single-stop-client-records">
+                  </a>
+              </div>
+              <div class="item">
+                  <a href="img/single_stop_client_summary.png" title="Client Summary" data-fancybox="singlestop" data-caption="Clicking on a client from the client records table, a case manager can see a detailed result of their client in terms of their basic info, household members, benefits eligibility statuses, as well as add and update their recent activities.">
+                    <img class="img-fluid rounded mb-3 mb-md-0" src="img/single_stop_client_summary.png" alt="single-stop-client-summary">
+                  </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div class="proj-line">
+              <h4>Single Stop</h4>
+              <div class="proj-links">
+                <a href="https://staging.singlestop.org" target="_blank"><i class="fas fa-link"></i></a>
+              </div>
+            </div>
+            <ul class="tech-list">
+              <li>JavaScript</li>
+              <li>React</li>
+              <li>Apollo Client</li>
+              <li>Redux</li>
+              <li>Styled</li>
+              <li>Material UI</li>
+              <li>Webpack</li>
+              <li>Travis CI</li>
+              <li>Jest</li>
+              <li>React Testing Library</li>
+              <li>Cypress</li>
+              <li>GraphQL</li>
+              <li>Algolia</li>
+              <li>Google Maps</li>
+              <li>Victory.js</li>
+            </ul>
+
+            <p>Single Stop partners with community based organizations and colleges to connect families and students in need with public benefits and resources.</p>
+
+            <p>As one of the core front end engineers, I work with our product, design, and backend teams in building out our benefits eligibility screener, local resources browser, and clients management system for our partners' case workers. </p>
+          </div>
+        </div>
+        
+        <hr>
+
+        <div class="row">
+          <div class="col-md-7" style="padding-bottom: 10px">
+            <div class="owl-carousel owl-theme">
+              <div class="item">
+                  <a href="img/roku-menu.png" title="Roku Menu" data-fancybox="beat45" data-caption="Venues simply download our app from the Roku store, then select one of our 50+ channels to set the atmosphere.">
+                    <img src="img/roku-menu.png" class="img-fluid rounded mb-3 mb-md-0" alt="beat45-roku">
+                  </a>
+              </div>
+              <div class="item">
+                  <a href="img/beat45-dj-overlay.png" title="Roku DJ overlay" data-fancybox="beat45" data-caption="Once a channel is selected, randomized sets of 30 minute video mixes made by one of our 25+ DJs from across the United States will fill the room.">
+                    <img class="img-fluid rounded mb-3 mb-md-0" src="img/beat45-dj-overlay.png" alt="beat45-show">
+                  </a>
+              </div>
+              <div class="item">
+                  <a href="img/audit-screen3.png" title="Audit Page" data-fancybox="beat45" data-caption="Once a DJ uploads a mix, our content managers will audit the mix, ensuring top notch video/audio quality, proper tagging, and seeing what channel(s) the mix will reside in if approved.">
+                    <img class="img-fluid rounded mb-3 mb-md-0" src="img/audit-screen3.png" alt="beat45-audit">
+                  </a>
+              </div>
+              <div class="item">
+                  <a href="img/dj_management.png" title="DJ Management Page" data-fancybox="beat45" data-caption="DJ Management page allows our admins a quick glance to see our DJs' amount of: plays, pending and approved mixes, unpaid invoices, converted venue referrals, as well as their latest online activity.">
+                    <img class="img-fluid rounded mb-3 mb-md-0" src="img/dj_management.png" alt="beat45-djs">
+                  </a>
+              </div>
+              <div class="item">
+                  <a href="img/custom_playlist_3.png" title="Mixes and Custom Playlist Pages" data-fancybox="beat45" data-caption="Custom Playlist Creator: Through a combination of Websockets and Redux, adding a mix to a custom playlist in one window automatically popuplates the custom playlist window with the added mix without needing a page refresh.  Using React's react-beautiful-dnd, the mixes are reorderable via drag and drop.">
+                    <img class="img-fluid rounded mb-3 mb-md-0" src="img/custom_playlist_3.png" alt="beat45-djs">
+                  </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div class="proj-line">
+              <h4>Beat45</h4>
+              <div class="proj-links">
+                <a href="https://beat45.com" target="_blank"><i class="fas fa-link"></i></a>
+              </div>
+            </div>
+            <ul class="tech-list">
+              <li>JavaScript</li>
+              <li>React</li>
+              <li>Redux</li>
+              <li>jQuery</li>
+              <li>Webpack</li>
+              <li>CSS3</li>
+              <li>SASS</li>
+              <li>Styled</li>
+              <li>Flexbox</li>
+              <li>Grid</li>
+              <li>Ruby on Rails</li>
+              <li>Websockets</li>
+              <li>D3.js</li>
+              <li>PostgreSQL</li>
+              <li>AWS</li>
+            </ul>
+
+            <p>Beat45 provides music video streaming services for bars and restaurants as the world's first platform to offer on-demand video DJs.</p>
+
+            <p>As the main front end developer, I develop and maintain the UI and API for: uploading, auditing, and managing mixes and channels; DJ and venue tracking; registration, referrals, and playlist creator.</p>
+          </div>
+        </div>
+        <hr>
+
+        <div class="row">
+          <div class="col-md-7" style="padding-bottom: 10px">
+            <div class="owl-carousel owl-theme">
+              <div class="item">
+                  <a href="img/qpi_landing.png" title="QPi Landing" data-fancybox="qpi" data-caption="QPi Education provides workshops and toolkits to educators wishing to teach programming and engineering to their students.">
+                    <img class="img-fluid rounded mb-3 mb-md-0" src="img/qpi_landing.png" alt="qpi-landing">
+                  </a>
+              </div>
+              <div class="item">
+                  <a href="img/qpi_user_flow.png" title="QPi User Flow" data-fancybox="qpi" data-caption="QPi Education's UI/UX designer wanted me to provide backend integration for her user flow diagram for community and non-community members.">
+                    <img class="img-fluid rounded mb-3 mb-md-0" src="img/qpi_user_flow.png" alt="qpi-flow">
+                  </a>
+              </div>
+              <div class="item">
+                  <a href="img/qpi_workshop_overview.png" title="QPi Members Page" data-fancybox="qpi" data-caption="When registered members sign in and join a community, they land in this page displaying general information along with community member profiles.">
+                    <img class="img-fluid rounded mb-3 mb-md-0" src="img/qpi_workshop_overview.png" alt="qpi-about">
+                  </a>
+              </div>
+              <div class="item">
+                  <a href="img/qpi_workshop_resources.png" title="QPi Curriculum" data-fancybox="qpi" data-caption="Only premium members are allowed access to these lesson contents.">
+                    <img class="img-fluid rounded mb-3 mb-md-0" src="img/qpi_workshop_resources.png" alt="qpi-resources">
+                  </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div class="proj-line">
+              <h4>QPi Education</h4>
+              <div class="proj-links">
+                <a href="https://www.hellostephwang.com/work/qpi-education" target="_blank"><i class="fas fa-link"></i></a>
+              </div>
+            </div>
+            <ul class="tech-list">
+              <li>Ruby on Rails</li>
+              <li>Webflow</li>
+              <li>JavaScript</li>
+              <li>CSS</li>
+              <li>AWS Elastic Beanstalk</li>
+              <li>AWS S3</li>
+              <li>AWS Route 53</li>
+              <li>PostgreSQL</li>
+              <li>Mailchimp</li>
+            </ul>
+
+            <p>QPi Education works with educators to make engaging STEM learning experiences accessible to all.</p>
+
+            <p>QPi had requested for my services to migrate their hosting platform from Webflow to AWS, as well as to expand their website to include social platform and premium membership features.</p>
+          </div>
+        </div>
+      </div>
+    </div> <!--portfolio -->
+
+    <div id="contact" class="contactSection section">
+      <div class="col-md-12 text-center">
+        <h5 class="subHeading">CONTACT</h5>
+        <h2>Let's connect!</h2>
+        <p>I'm always open for opportunities to collaborate or up for a quick chat.</p>
+        <p class="emailSub">EMAIL ME AT</p>
+        <a href="mailTo:kevinyckim33@gmail.com" class="emailAddress">kevinyckim33@gmail.com</a>
+      </div>
+    </div>
+
+    <div class="copyrightSection">
+      <div class="col-md-12 text-center">
+        <p>&copy; Copyright Kevin Y. Kim 2021</p>
+      </div>
+      <ul>
+        <li><a href="https://www.linkedin.com/in/kevinyckim/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a></li>
+        <li><a href="https://github.com/kevinYCKim33" target="_blank" title="Github"><i class="fab fa-github-square"></i></a></li>
+        <li><a href="https://angel.co/kevinyckim" target="_blank" title="Angel List"><i class="fab fa-angellist"></i></a></li>
+      </ul>
+    </div>
+
+    <script src="js/jquery.superslides.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/typed.min.js"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
