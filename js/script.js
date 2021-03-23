@@ -11,9 +11,9 @@ $(document).ready(function () {
 
   // https://github.com/mattboldt/typed.js/
   let typed = new Typed(".typed", {
-    strings: ["Front End Engineer"],
+    strings: ["Data Analyst", "Data Scientist","Data Engineer"],
     typeSpeed: 70,
-    // loop: true,
+    loop: true,
     startDelay: 1000,
     showCursor: false,
   });
