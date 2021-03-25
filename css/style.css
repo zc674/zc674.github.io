@@ -1,13 +1,13 @@
 body {
   margin: 0px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 14px;
   color: #333;
   background-color: #fff;
 }
 
 p {
-  font-family: 'Libre Baskerville', sans-serif;
+  font-family: "Libre Baskerville", sans-serif;
 }
 
 /* -------------
@@ -46,9 +46,9 @@ p {
 }
 
 .titleMessage .heading p {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #fff;
-  text-shadow: 0px 2px 5px rgba(0,0,0,0.4);
+  text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
   font-weight: 400;
 }
 
@@ -92,7 +92,7 @@ p {
 .navbar-brand,
 .navbar-brand:hover {
   color: #fff;
-  font-family: 'Lobster', cursive;
+  font-family: "Lobster", cursive;
   font-size: 2em;
   letter-spacing: 0.07em;
   padding: 0 0 0 0;
@@ -114,7 +114,8 @@ p {
   padding: 50px 0;
 }
 
-#about, #portfolio {
+#about,
+#portfolio {
   background-color: #f5f5f5;
 }
 
@@ -168,7 +169,7 @@ p {
   font-size: 15px;
   cursor: pointer;
   letter-spacing: 1.5px;
-  transition: all .5s;
+  transition: all 0.5s;
 }
 
 .about-container__email-link:hover {
@@ -194,7 +195,7 @@ p {
 }
 
 #about h4 {
-  font-family: 'Libre Baskerville', sans-serif;
+  font-family: "Libre Baskerville", sans-serif;
 }
 
 #about .col-md-4 {
@@ -243,7 +244,12 @@ p {
 .skillsSection,
 .contactSection {
   /* background-color: #e74c3c; */
-  background-image: linear-gradient(to right bottom, rgba(222,53,46,0.8), rgba(176,37,33,0.8)),url(../img/red_background.jpg);
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(222, 53, 46, 0.8),
+      rgba(176, 37, 33, 0.8)
+    ),
+    url(../img/red_background.jpg);
   background-size: cover;
   color: #fff;
 }
@@ -330,7 +336,7 @@ a.highlight {
 }
 
 .proj-line h4 {
-  margin-bottom: 0px;
+  margin-bottom: 10px;
 }
 
 .proj-links {
@@ -339,7 +345,7 @@ a.highlight {
 }
 
 .proj-line a {
-  color:inherit;
+  color: inherit;
   text-decoration: none;
   margin-right: 5px;
 }
@@ -375,7 +381,12 @@ a.highlight {
 
 #contact {
   padding: 150px 0px;
-  background-image: linear-gradient(to right bottom, rgba(222,53,46,0.8), rgba(176,37,33,0.8)),url(../img/red_background.jpg);
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(222, 53, 46, 0.8),
+      rgba(176, 37, 33, 0.8)
+    ),
+    url(../img/red_background.jpg);
   background-size: cover;
 }
 
@@ -385,7 +396,7 @@ a.highlight {
 }
 
 #contact p {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 16px;
   color: #fff;
   margin-bottom: 0.5rem;
@@ -419,7 +430,7 @@ a.highlight {
 
 .copyrightSection p {
   margin: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .copyrightSection ul {
