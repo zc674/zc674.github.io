@@ -11,10 +11,10 @@ $(document).ready(function () {
 
   // https://github.com/mattboldt/typed.js/
   let typed = new Typed(".typed", {
-    strings: ["Data Analyst", "Data Scientist","Data Engineer"],
+    strings: ["Data Scientist"],
     typeSpeed: 70,
-    loop: true,
-    startDelay: 1000,
+    loop: false,
+    // startDelay: 1000,
     showCursor: false,
   });
 
